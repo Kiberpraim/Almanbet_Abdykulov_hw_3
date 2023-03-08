@@ -22,6 +22,9 @@ public class Main {
         double num = numbers[0];
         int index = 0;
         for (int i = 0; i < 15; i++) {
+
+            System.out.println(Arrays.toString(numbers));
+
             for (int j = i; j < 15; j++) {
                 if (numbers[j] < num) {
                     num = numbers[j];
@@ -32,8 +35,6 @@ public class Main {
             numbers[i] =num;
 
             num = numbers[i+1];
-
-            System.out.println(Arrays.toString(numbers));
         }
 
     }
